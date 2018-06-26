@@ -1,10 +1,10 @@
-import { EmptyAppPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('empty-app App', () => {
-  let page: EmptyAppPage;
+describe('workspace-project App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new EmptyAppPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {

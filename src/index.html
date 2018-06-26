@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>EmptyApp</title>
-  <base href="/">
+  <title>tfs-ng-app</title>
+
+
+  <script type="text/javascript">
+    window.__vssNoSandboxShim = true;
+  </script>
+  <script src="../node_modules/vss-web-extension-sdk/lib/VSS.SDK.js"></script>
+
+  <script type="text/javascript">
+    VSS.init({
+      usePlatformScripts: true
+    });
+    VSS.ready(function () {
+      VSS.notifyLoadSucceeded();
+    });
+  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>Loading. Please wait...</app-root>
 </body>
 </html>
